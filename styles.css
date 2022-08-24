@@ -1,0 +1,102 @@
+/* *{
+    background-color: rgb(237, 133, 235); /* es para ponerle color a la pagina */ */
+
+    body{
+        margin: 0px;
+    }
+    
+    /*div{
+        padding: 20px; /* separa un elemento de otro adentro de la misma caja, segun los div} */
+    
+    #main{
+        background-color: bisque;
+    }
+    
+    nav{
+        background-color: none;
+        display: flex;
+        flex-direction:row;
+        height: 120px;
+    }
+    
+    nav ul{ /* adentro del nav todas las listas desordenadas se muestren como flex */
+        display: flex;
+    }
+    
+    nav li{
+        margin-left: 20px;
+        list-style: none; /* para sacarle los puntos que por default pone li */
+    }
+    
+    nav a{
+        text-decoration:dashed; /* sacamos el subrayado de los hipervinculos */
+        color: rgb(0, 0, 0); /* le cambia el color a los botones */
+    }
+    
+    nav a:hover{ /* para cuando te paras arriba y cambia de color */
+        color: coral 
+    }
+    
+    nav img{
+        display: flex;
+            max-height: 150px;
+            width: auto ;
+    }
+    
+    .menuButton{
+        display: flex;
+        background-color: rgb(202, 164, 202);
+        align-items: center; /* no te lo pone ni arriba ni abajo, en el medio */
+        justify-content: flex-end; /* manda todos los botones al final de la caja */
+        width: 100%;
+        padding: 20px;
+    }
+    
+    /* flex: transofrmo listas en botoneras, acomode los hipervinculos que estaban abajo, a la derecha */
+   /*  boton con estilo */
+
+
+   #primero{
+    background-color: rgb(255, 205, 235);
+    display:flexbox;
+    margin: 30px;
+    padding: 30px;
+   }
+
+   #segundo{
+    background-color: rgb(202, 164, 202);
+    display:flex;
+    margin: none;
+    padding: none;
+   }
+
+   #tercero{
+    background-color:rgb(255, 205, 235);
+    display:flex;
+    margin:30px;
+    padding:20px;
+    justify-content: space-evenly;
+   }
+
+   footer section{
+    display:flex
+   }
+
+   footer{
+    background-color:rgb(255, 205, 235); 
+    display:flex;
+    justify-content: space-evenly;
+   }
+
+   footer li{ /* saco los puntos de los items del nav */
+    list-style: none;
+   }
+
+   footer a{ /* saco el subrayado a los enlaces */
+    text-decoration: none;
+    color: black;
+   }
+
+   footer a:hover{ 
+    color:rgb(223, 75, 164);
+   }
