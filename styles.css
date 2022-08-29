@@ -42,6 +42,10 @@
             max-height: 150px;
             width: auto ;
     }
+
+    .fa-brands fa-skyatlas{
+        width: 200px
+    }
     
     .menuButton{
         display: flex;
@@ -71,11 +75,23 @@
    }
 
    #tercero{
-    background-color:rgb(255, 205, 235);
+    background-color: rgb(255, 205, 235);
     display:flex;
     margin:30px;
     padding:20px;
     justify-content: space-evenly;
+   }
+
+   #tercero p{
+    width: 200px;
+    height: 125px;
+   }
+
+   #cuarto{
+    background-color: rgb(255, 205, 235);
+    display:flexbox;
+    margin: 30px;
+    padding: 20px;
    }
 
    footer section{
