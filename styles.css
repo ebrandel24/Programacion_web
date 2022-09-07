@@ -13,7 +13,7 @@
     }
     
     nav{
-        background-color: none;
+        background-color:rgb(202, 164, 202);
         display: flex;
         flex-direction:row;
         height: 120px;
@@ -47,6 +47,7 @@
         width: 200px
     }
     
+
     .menuButton{
         display: flex;
         background-color: rgb(202, 164, 202);
@@ -60,34 +61,65 @@
    /*  boton con estilo */
 
 
-   #primero{
+   #presentacion{
     background-color: rgb(255, 205, 235);
-    display:flexbox;
+    display:flex;
     margin: 30px;
     padding: 30px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
    }
 
-   #segundo{
-    background-color: rgb(202, 164, 202);
-    display:flex;
-    margin: none;
-    padding: none;
+   #presentacion img{
+    margin:30px;
    }
 
-   #tercero{
+   #productos{
     background-color: rgb(255, 205, 235);
     display:flex;
-    margin:30px;
+    flex-direction: row;
+    margin: none;
+    padding: none;
+    justify-content:center;
+   }
+
+   #productos .btn-group{
+    margin: 30px;
+   }
+
+   #productos-estrellas{ /* quiero que los botones de productos estrellas me queden alineados todos en el mismo nivel y pense que poniendole la misma altura al encabezado, imagenes y parrafos iba a suceder pero no se alinean. */
+    background-color: rgb(255, 205, 235);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:30px; 
     padding:20px;
     justify-content: space-evenly;
    }
 
-   #tercero p{
-    width: 200px;
-    height: 125px;
+   #productos-estrellas img{
+    height: 250px;
+    width: auto;
+   } 
+
+   #productos-estrellas h5{
+    height:70px;
    }
 
-   #cuarto{
+   #productos-estrellas p{ /* me gustaria que los parrafos no tengan esos espacios entre algunas palabras (nose como sacarlo) */
+    width:auto;
+    height:130px;
+    text-align: justify;
+   }
+
+   .card{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+   }
+
+   #formulario{
     background-color: rgb(255, 205, 235);
     display:flexbox;
     margin: 30px;
@@ -99,7 +131,7 @@
    }
 
    footer{
-    background-color:rgb(255, 205, 235); 
+    background-color:rgb(202, 164, 202);
     display:flex;
     justify-content: space-evenly;
    }
@@ -116,3 +148,7 @@
    footer a:hover{ 
     color:rgb(223, 75, 164);
    }
+
+   .my-element {
+    --animate-repeat:infinite;
+  }
