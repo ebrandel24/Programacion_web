@@ -126,6 +126,85 @@
     padding: 20px;
    }
 
+   #descubriendo {
+    margin: 40px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #descubriendo h4 {
+        color:rgb(64, 64, 64);
+    }
+
+    #descubriendo h3 {
+        margin-bottom: 30px;
+        font-style:italic;
+        color:rgb(201, 107, 194);
+        align-content: center;
+    }
+
+    #descubriendo .col-4 {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #descubriendo .col-4 p {
+        height: 200px;
+        width: 80%;
+    }
+
+    #descubriendo h5 {
+        color: rgb(70, 24, 110)
+    }
+
+    #descubriendo img {
+        width: 50%;
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+
+    #descubriendo p{ 
+        width:auto;
+        height:130px;
+        text-align: justify;
+        margin-bottom: 70px;
+       }
+
+    #diagnostico {
+        margin: 40px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #diagnostico h4 {
+        color:rgb(64, 64, 64);
+    }
+
+    #diagnostico h3 {
+        margin-bottom: 30px;
+        font-style:italic;
+        color:rgb(201, 107, 194);
+        align-content: center;
+    }
+
+    #diagnostico{
+        background-color: rgb(255, 205, 235);
+        display:flexbox;
+        margin: 30px;
+        padding: 20px;
+       }
+
+    #diagnostico .form-check{
+        display: flexbox;
+    }
+
    footer section{
     display:flex
    }
@@ -152,3 +231,8 @@
    .my-element {
     --animate-repeat:infinite;
   }
+
+  hr{
+    color:brown !important;
+  }
+
