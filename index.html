@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav_lg">
             <img src="./assets/img/skyatlas-brands.svg" class="img-fluid" alt="logo portada">
                 <div class="menuButton">
                     <ul>
@@ -42,6 +42,57 @@
                         </li>
                     <ul>     
         </nav>
+
+        <div id="mobile_nav">
+          <nav class="navbar navbar-light">
+              <div class="container-fluid">
+                  
+                  <div id="logo">
+                    <img src="./assets/img/skyatlas-brands.svg" class="img-fluid" alt="logo portada">
+                  </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+
+                      <li>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success dropdown-toggle" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                              Marcas
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Drunk Elephant</a></li>
+                              <li><a class="dropdown-item" href="#">The Ordinary</a></li>
+                              <li><a class="dropdown-item" href="#">Kiehl's</a></li>
+                              <li><a class="dropdown-item" href="#">Estee Lauder</a></li>
+                              <li><a class="dropdown-item" href="#">La Roche Posay</a></li>
+                              <li><a class="dropdown-item" href="#">Vichy</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Otros</a></li>
+                            </ul>
+                          </div>
+                      </li>
+
+                      <li><a href="index.html" target="_self"><button type="button" class="btn btn-secondary"><i class="fa-solid fa-cart-shopping"></i>Comprar</button></a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </nav>
+        </div>
     </header>
 
 
@@ -59,54 +110,56 @@
     </section>
 
     <section id="productos">
-      <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          Tipos de producto
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Cremas hidratantes</a></li>
-          <li><a class="dropdown-item" href="#">Limpiadores</a></li>
-          <li><a class="dropdown-item" href="#">Tratamientos</a></li>
-          <li><a class="dropdown-item" href="#">Mascaras</a></li>
-          <li><a class="dropdown-item" href="#">Cuidado de los ojos</a></li>
-          <li><a class="dropdown-item" href="#">Balsamos labiales</a></li>
-          <li><a class="dropdown-item" href="#">Protectores solares</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Otros</a></li>
-        </ul>
-      </div>
+      <div class="container">
+        <div class="row">
+          <div class="btn-group col-lg-4">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Tipos de producto
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cremas hidratantes</a></li>
+              <li><a class="dropdown-item" href="#">Limpiadores</a></li>
+              <li><a class="dropdown-item" href="#">Tratamientos</a></li>
+              <li><a class="dropdown-item" href="#">Mascaras</a></li>
+              <li><a class="dropdown-item" href="#">Cuidado de los ojos</a></li>
+              <li><a class="dropdown-item" href="#">Balsamos labiales</a></li>
+              <li><a class="dropdown-item" href="#">Protectores solares</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Otros</a></li>
+            </ul>
+          </div>
 
-      
-      <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          Para pieles
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Sensibles</a></li>
-          <li><a class="dropdown-item" href="#">Secas</a></li>
-          <li><a class="dropdown-item" href="#">Oleosa</a></li>
-          <li><a class="dropdown-item" href="#">Con rosacea</a></li>
-          <li><a class="dropdown-item" href="#">Mixta</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Todo tipo de pieles</a></li>
-        </ul>
-      </div>
-      
-      
-      <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          Elaboración
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Cruelty Free</a></li>
-          <li><a class="dropdown-item" href="#">Vegana</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Otros</a></li>
-        </ul>
+          
+          <div class="btn-group col-lg-4">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Para pieles
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Sensibles</a></li>
+              <li><a class="dropdown-item" href="#">Secas</a></li>
+              <li><a class="dropdown-item" href="#">Oleosa</a></li>
+              <li><a class="dropdown-item" href="#">Con rosacea</a></li>
+              <li><a class="dropdown-item" href="#">Mixta</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Todo tipo de pieles</a></li>
+            </ul>
+          </div>
+          
+          
+          <div class="btn-group col-lg-4">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Elaboración
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cruelty Free</a></li>
+              <li><a class="dropdown-item" href="#">Vegana</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Otros</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
-
-    <br>
 
     <section id="productos-estrellas">
         <h2 id="estrellas">Algunos de nuestros productos estrellas</h2>
@@ -169,13 +222,13 @@
 
     <section id="descubriendo"> 
       <h4>Descubriendo los tipos de pieles...</h4>
-      <div class="text-center col-8">
+      <div class="text-center col-12 col-lg-8">
         <h3>¿Queres tener tu rutina de skincare pero no sabes que productos agregar? Nosotros te contamos los tipos de pieles más comunes y sus caracteristicas, y claramente lo que cada una necesita. </h3>
       </div>
 
-      <div class="container-fliud">
+      <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-lg-4 piel">
             <img src="./assets/img/pielseca.jpg" alt="Pieles secas">
 
             <h5>Pieles secas</h5>
@@ -184,10 +237,10 @@
               Las pieles secas se caracterizan por tener una sensación de tirantez, tono apagado, tacto áspero, irritable, con rojeces e incluso puede presentar descamación. 
               Este tipo de pieles tienen carencia de lípidos, y son necesarias cremas que se los aporten, es decir, que sean nutritivas. Una crema indicada para estas es la Cetaphill (pieles secas).
             </p>
-            <img src="./assets/img/cetaphill.jpg" alt="Cetaphill">
+            <img src="./assets/img/cetaphill.jpg" alt="Cetaphill" class="producto">
           </div>
 
-          <div class="col-4">
+          <div class="col-12 col-lg-4 piel">
             <img src="./assets/img/pielgrasa.jpg" alt="Pieles grasas">
 
             <h5>Pieles grasas</h5>
@@ -196,11 +249,11 @@
               La piel grasa resulta aceitosa, húmeda y muy brillante, apreciamos con frecuencia puntos negros o espinillas debido a la tendencia natural de este tipo de pieles de formar impurezas. 
               Las pieles grasas necesitan cuidados específicos por eso es importante dar en el clavo con los productos hidratantes para pieles grasas. Uno especifico es la Effaclar MAT de La Roche-Posay.
             </p>
-            <img src="./assets/img/efaclermat.webp" alt="Laroche">
+            <img src="./assets/img/efaclermat.webp" alt="Laroche" class="producto">
           </div>
           
 
-          <div class="col-4">
+          <div class="col-12 col-lg-4 piel">
             <img src="./assets/img/pielmixta.webp" alt="Pieles mixtas">
 
             <h5>Pieles mixtas</h5>
@@ -210,7 +263,7 @@
               Tambien muestra las mejillas mas secas. Una piel mixta debe ser manejada con cosmética oil free (libre de aceites), ya que es preferible elegir siempre 
               emulsiones hidratantes y cosméticos que tengan mayor porcentaje de agua que de aceite.
             </p>
-            <img src="./assets/img/neutrogena.webp" alt="Neutrogena">
+            <img src="./assets/img/neutrogena.webp" alt="Neutrogena" class="producto">
           </div>
           
         </div>
@@ -220,60 +273,72 @@
 
     <section id="diagnostico">
       <h4>¿Queres tener un diagnostico personalizado?</h4>
-      <div class="text-center col-8">
+      <div class="text-center col-12 col-lg-8">
         <h3>¡Indicando las caracteristicas de tu piel, The Specials te recomienda un tratamiento exclusivo para vos!</h3>
+      </div>
+
+      <div class="info col-11">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Que tipo de piel crees tener o sabes que tenes</option>
+          <option value="1">Piel seca</option>
+          <option value="2">Piel grasa</option>
+          <option value="3">Piel mixta</option>
+          <option value="3">Otra</option>
+          <option value="3">No conozco mi tipo de piel</option>
+        </select>
       </div>
 
       <hr>
 
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Que tipo de piel crees tener o sabes que tenes</option>
-        <option value="1">Piel seca</option>
-        <option value="2">Piel grasa</option>
-        <option value="3">Piel mixta</option>
-        <option value="3">Otra</option>
-        <option value="3">No conozco mi tipo de piel</option>
-      </select>
-
-      <br>
       <div class="container">
         <div class="row">
         <h5>Sentis que la piel...</h5>
-          <div class="col-3">
+          <div class="col-4 col-lg-3">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">Es tirante</label>
           </div>
-          <div class="col-3">
+          <div class="col-4 col-lg-3">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">Es grasosa</label>
           </div>
-          <div class="col-3">
+          <div class="col-4 col-lg-3">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
             <label class="form-check-label" for="inlineRadio3">Otro</label>
           </div>
+        </div>
 
-      <br>
+        <br><hr>
 
-      <label for="customRange1" class="form-label">Del 1 al 10, ¿cuanto te cuidas del sol? (siendo 1 la izquierda y 10 la derecha)</label>
-      <input type="range" class="form-range" id="customRange1">
+      <div class="info">
+        <h5>Del 1 al 10, ¿cuanto te cuidas del sol? (siendo 1 la izquierda y 10 la derecha)</h5>
+        <label for="customRange1" class="form-label"></label>
+        <input type="range" class="form-range" id="customRange1">
+      </div>
 
-      <h5>Para un mejor dianostico podes enviarnos tu selfie donde se aprecien las caracteristicas de tu piel</h5>
-      <br>
-      <div class="row">
-        <div class="input-group mb-3">
-            <input type="file" class="form-control" id="inputGroupFile02">
-            <label class="input-group-text" for="inputGroupFile02">Subir archivo</label>
+      <hr>
+
+      <div class="info">
+        <h5>Para un mejor dianostico podes enviarnos tu selfie donde se aprecien las caracteristicas de tu piel</h5>
+        <br>
+        <div class="row">
+          <div class="input-group mb-3">
+              <input type="file" class="form-control col-12" id="inputGroupFile02">
+              <label class="input-group-text" for="inputGroupFile02">Subir archivo</label>
+          </div>
         </div>
       </div>
 
-      <br>
-      <div class="row mb-3">
+      <hr>
+      <div class="row mb-3 info">
         <h5>Dejanos tu mail para poder enviarte tu diagnostico completo</h5>
           <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
           <div class="col-sm-10">
             <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="email@example.com">
       </div>
 
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-secondary" type="button">Enviar</button>
+      </div>
       
     </section>
 
@@ -281,96 +346,108 @@
     <section id="formulario">
         <div class="container"> 
           <div class="row"> 
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
               <h3>Mantenete en contacto</h3>
             <p>Al proporcionar su dirección de correo electrónico, acepta recibir 
                 comunicaciones de la marca (The Specials) (esto se puede cambiar en 
                 cualquier momento). Consulte nuestra Política de privacidad y nuestros 
                 Términos de uso para obtener más detalles.</p>
             </div>
-            <div class="col-8">
-              <form>
-              <div class="input-group">
-                <span class="input-group-text">Nombre y apellido</span>
-                <input type="text" aria-label="First name" class="form-control">
-                <input type="text" aria-label="Last name" class="form-control">
+
+            <div class="col-lg-8">
+              <div class="col-12">
+                <form>
+                <div class="input-group">
+                  <span class="input-group-text">Nombre y apellido</span>
+                  <input type="text" aria-label="First name" class="form-control">
+                  <input type="text" aria-label="Last name" class="form-control">
+                </div>
               </div>
-      
-        <br>
-       
-        <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">@</span>
-            <input type="text" class="form-control" placeholder="Ingrese su mail" aria-label="Mail" aria-describedby="addon-wrapping">
-          </div>
-        <br>
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">DNI</span>
-            <input type="number" class="form-control" aria-label="Sizing example input" 
-            aria-describedby="inputGroup-sizing-default" placeholder="Ingrese su DNI">
-        </div>
+        
+            <br>
+          
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" class="form-control" placeholder="Ingrese su mail" aria-label="Mail" aria-describedby="addon-wrapping">
+              </div>
+            <br>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">DNI</span>
+                <input type="number" class="form-control" aria-label="Sizing example input" 
+                aria-describedby="inputGroup-sizing-default" placeholder="Ingrese su DNI">
+            </div>
 
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Telefono</span>
-            <input type="tel" class="form-control" aria-label="Sizing example input" 
-            aria-describedby="inputGroup-sizing-default" placeholder="Ejem. 11-6610-4550" 
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        </div>
-        <input name="info" type="checkbox"> Quiero recibir informacion
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Telefono</span>
+                <input type="tel" class="form-control" aria-label="Sizing example input" 
+                aria-describedby="inputGroup-sizing-default" placeholder="Ejem. 11-6610-4550" 
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            
+            <div class="row">
+              <input name="info" type="checkbox" class="col-3 col-lg-1"> Quiero recibir informacion
 
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button class="btn btn-secondary" type="button">Enviar</button>
-        </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-secondary" type="button">Enviar</button>
+              </div>
             </div>
           </div>
-        </form>
-                
         </div>
-
+      </div>
     </section>
 
     <footer>
-        <div> 
-            <h4>Empresa</h4>
-            <li><a href="">Acerca de nosotros</a></li>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-lg-4" id="empresa"> 
+                <h4>Empresa</h4>
+                <li><a href="">Acerca de nosotros</a></li>
 
-            <br>
-            <h4>Atención al cliente</h4>
-            <li><a href="">Preguntas frecuentes</a></li>
-            <li><a href="">Politica de devoluciones</a></li>
-            
-            <br>
-            <h5><a href="">Seguimiento del pedido</a></h5>
-            <br>
-            <h5><a href="">Iniciar sesion</a></h5>
+                <br>
+                <h4>Atención al cliente</h4>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Politica de devoluciones</a></li>
+                
+                <br>
+                <h5><a href="">Seguimiento del pedido</a></h5>
+                <br>
+                <h5><a href="">Iniciar sesion</a></h5>
+            </div>
+
+            <div class="container-fluid col-6 col-lg-8" id="redes">
+              <div class="row">
+                <div class="col-lg-6"> 
+                      <h5>Region</h5>
+                      <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/data=!4m2!3m1!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87?sa=X&ved=2ahUKEwj0xeGGotv5AhWqrZUCHU1kCpcQ8gF6BAhIEAE" target="_blank">
+                          <img src="./assets/img/ubic2.png" alt="logo ubicacion" width="30px">
+                          <p>Argentina, Buenos Aires</p>
+                      </a>
+                
+                  <hr>
+                  <h5>Podes encontrarnos en...</h5>
+                  <p>@the_specials</p>
+                  <a href="https://www.instagram.com/" target="_blank"> <!-- si tocas el icono te lleva a la pagina -->
+                      <img src="./assets/img/ig.png" alt="Logo Ig" width="40px">
+                  </a>
+                  <hr>
+                </div>
+
+                <div class="col-lg-6">
+                  <p>@the_specials</p>
+                  <a href="https://www.facebook.com" target="_blank">
+                      <img src="./assets/img/face2.png" alt="Logo Facebook" width="40px">
+                  </a>
+                  <hr>
+                  <p>¡Y te dejamos nuestro mail por cualquier consulta extra!</p>
+                  <p>thespecials@gmail.com</p>
+                  <a>
+                      <img src="./assets/img/apple-mail.png" alt="Mail" width="40px">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-            <div> 
-                <h5>Region</h5>
-                <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/data=!4m2!3m1!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87?sa=X&ved=2ahUKEwj0xeGGotv5AhWqrZUCHU1kCpcQ8gF6BAhIEAE" target="_blank">
-                    <img src="./assets/img/ubic2.png" alt="logo ubicacion" width="30px">
-                    <p>Argentina, Buenos Aires</p>
-                </a>
-           
-            <hr>
-            <h5>Podes encontrarnos en...</h5>
-            <p>@the_specials</p>
-            <a href="https://www.instagram.com/" target="_blank"> <!-- si tocas el icono te lleva a la pagina -->
-                <img src="./assets/img/ig.png" alt="Logo Ig" width="40px">
-            </a>
-            <hr>
-            </div>
-            <div>
-            <p>@the_specials</p>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="./assets/img/face2.png" alt="Logo Facebook" width="40px">
-            </a>
-            <hr>
-            <p>¡Y te dejamos nuestro mail por cualquier consulta extra!</p>
-            <p>thespecials@gmail.com</p>
-            <a>
-                <img src="./assets/img/apple-mail.png" alt="Mail" width="40px">
-            </a>
-            </div>
         
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

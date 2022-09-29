@@ -11,7 +11,17 @@
     #main{
         background-color: bisque;
     }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
     
+    #mobile_nav {
+        display: none;
+    }
+
     nav{
         background-color:rgb(202, 164, 202);
         display: flex;
@@ -43,6 +53,49 @@
             width: auto ;
     }
 
+    @media screen and (max-width:700px) {
+        #nav_lg {
+            display: none;
+        }
+    
+        header {
+            position: static;
+        }
+    
+        #mobile_nav {
+            display: block;
+        }
+    
+        #mobile_nav img{
+            width: 40%;
+        }
+    
+        .offcanvas-end {
+            width: 80%
+        }
+    
+        #mobile_nav button {
+            background-color: transparent;
+            color:rgb(202, 164, 202);
+            border-style: none; 
+            margin: 5px;
+            padding: 8px 0;
+        }
+    
+        #mobile_nav button:hover {
+            background-color: rgb(202, 164, 202);
+            color:white;
+        }
+    
+        #mobile_nav a {
+            color:rgb(202, 164, 202);
+            margin: 5px;
+        }
+    
+        #movile_nav a:hover {
+            color:black;
+        }
+    }
     .fa-brands fa-skyatlas{
         width: 200px
     }
@@ -82,10 +135,8 @@
     margin: none;
     padding: none;
     justify-content:center;
-   }
-
-   #productos .btn-group{
     margin: 30px;
+    padding: 30px;
    }
 
    #productos-estrellas{ /* quiero que los botones de productos estrellas me queden alineados todos en el mismo nivel y pense que poniendole la misma altura al encabezado, imagenes y parrafos iba a suceder pero no se alinean. */
@@ -117,13 +168,6 @@
     background-color: beige;
     display: flex;
     align-items: center;
-   }
-
-   #formulario{
-    background-color: rgb(255, 205, 235);
-    display:flexbox;
-    margin: 30px;
-    padding: 20px;
    }
 
    #descubriendo {
@@ -162,8 +206,22 @@
         color: rgb(70, 24, 110)
     }
 
+    #descubriendo .piel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #descubriendo img {
         width: 50%;
+        height: 15%;
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+
+    #descubriendo  .producto {
+        width: 50%;
+        height: 30%;
         border-radius: 50%;
         margin-bottom: 30px;
     }
@@ -174,6 +232,27 @@
         text-align: justify;
         margin-bottom: 70px;
        }
+
+@media screen and (max-width:700px) {
+    #descubriendo .piel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        border: 1px;
+        border-style: solid;
+        border-color: grey;
+        border-radius: 2%;
+        padding: 10px;
+    }
+
+    #descubriendo p{ 
+        width:auto;
+        height:190px;
+        text-align: justify;
+        margin-bottom: 70px;
+       }
+}
 
     #diagnostico {
         margin: 40px;
@@ -199,10 +278,46 @@
         display:flexbox;
         margin: 30px;
         padding: 20px;
+        padding-bottom: 5px;
        }
 
     #diagnostico .form-check{
         display: flexbox;
+    }
+
+    #diagnostico .info {
+        padding: 3px 0;
+    }
+
+    #diagnostico .btn-secondary {
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width:700px) {
+        #diagnostico .form-check-label {
+            font-size: small;
+        }
+    }
+
+    #formulario{
+        background-color: rgb(255, 205, 235);
+        display:flexbox;
+        margin: 30px;
+        padding: 20px;
+       }
+
+    #formulario h3 {
+        margin-top: 50px;
+    }
+
+    #formulario .btn-secondary {
+        margin: 10px;
+    } 
+
+    @media screen and (max-width:700px) {
+        #formulario h3 {
+            margin-top: 0;
+        }
     }
 
    footer section{
@@ -234,5 +349,22 @@
 
   hr{
     color:brown !important;
+  }
+
+  @media screen and (max-width:700px) {
+    #empresa {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer #redes{
+        font-size: small;
+    }
+
+    #redes img{
+        height: 20px;
+        width: 20px;
+    }
   }
 
